@@ -1,7 +1,7 @@
 // Selecting all elements with the class 'box' and storing them in the variable 'boxs'
 const boxs = document.getElementsByClassName('box');
 // Selecting elements by their IDs and storing them in variables
-const computerScoreElement = document.getElementById("computer_score")
+const computerScoreElement = document.getElementById("computer_score");
 const playerScoreElement = document.getElementById("player_score");
 const message = document.getElementById('message');
 const resetButton = document.getElementById('reset');
@@ -15,8 +15,8 @@ let gameActive = true;
 
 // Adding event listeners to each box element
 for(let i=0; i<boxs.length; i++){
-    boxs[i].addEventListener('click', boxClick)
-};
+    boxs[i].addEventListener('click', boxClick);
+}
 
 // Adding event listener to the reset button
 resetButton.addEventListener('click', handleResetClick);
@@ -72,7 +72,7 @@ function boxClick(e) {
     // Checking for a winner
     if (checkWinner(gameBoard) === currentPlayer) {
         // Updating scores and displaying message for player win
-        setScore(1,0)
+        setScore(1,0);
         message.textContent = 'You win!';
         gameActive = false;
     } else if (gameBoard.includes('')) {
@@ -106,7 +106,7 @@ function computerMove(currentIndex) {
     if (emptyboxs.length > 0) {
         tempEmptyboxs = emptyboxs;
         currentEmptyIndex = tempEmptyboxs.indexOf(currentIndex);
-        tempEmptyboxs.splice(currentEmptyIndex,1)
+        tempEmptyboxs.splice(currentEmptyIndex,1);
         const computer_index = getRandomIndex(tempEmptyboxs);
         makeMove(computer_index, computerPlayer);
     }
@@ -184,5 +184,5 @@ function handleResetClick() {
     for(let i=0; i<boxs.length; i++){
         boxs[i].textContent = '';
         boxs[i].classList.remove('X', 'O');
-    };
+    }
 }
