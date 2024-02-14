@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tic Tac Toe - CI - ML</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+<div class="container">
+        <h1>Tic Tac Toe</h1>
+        <div class="tic-tac-toe-board" id="board">
+            <div class="box"></div>
+            <div class="box" ></div>
+            <div class="box" ></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="row">
+        <div class="message" id="message">You are X, it's your turn</div>
+    </div>
+    <div class="row">
+
+        <button class="reset-button" id="reset">Reset Game</button>
+    </div>
+    </div>
+    <div id="score_board">
+		<h2>Score Board</h2>		
+	<table>
+		<thead>
+				<tr>
+					<th>Player Score(X)</th>
+					<th>Computer Score(O)</th>
+				</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td id="player_score"></td>
+				<td id="computer_score"></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

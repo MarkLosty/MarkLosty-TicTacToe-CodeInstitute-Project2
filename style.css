@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 36px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+   }
+
+.row{
+    width: 100%;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+    min-height: 100vh;
+}
+
+#score_board{
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#score_board h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#score_board table{
+    width: 100%;
+    background-color: #000;
+    border-radius: 5px;
+    color: #fff;
+}
+
+ td,th{
+    border: 1px solid #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.tic-tac-toe-board {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 360px;
+    width: 100%;
+    gap: 5px;
+}
+
+.box {
+    width: calc(33.3% - 10px);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.box:hover {
+    background-color: #8d8d8d;
+}
+
+.message {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.reset-button {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
